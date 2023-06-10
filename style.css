@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/*  
+body
+font-family: 'Open Sans', sans-serif;
+
+heading
+font-family: 'Poppins', sans-serif;
+
+*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    background-image: url(./images/bg-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+}
+
+#header {
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+#header .logo {
+    padding: 3rem;
+}
+
+#header .container {
+    display: flex;
+
+
+
+}
+
+/* left side */
+
+
+#left {
+    margin-left: 4rem;
+
+}
+
+/* right side */
+#right {
+
+    padding: 3rem;
+
+}
+
+#right h1 {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+#right p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#right a {
+    display: inline-flex;
+    width: 200px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all .5s;
+    font-size: 1.3rem;
+ 
+}
+
+#right a:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.social-links {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+}
+
+.social-links span {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    margin-right: 1rem;
+
+
+
+}
+
+.social-links span:hover {
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+@media (max-width: 600px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+    }
+
+    #header {
+        width: 100vw;
+        height: auto;
+        position: relative;
+    }
+
+
+
+    .container {
+        flex-direction: column;
+
+
+
+    }
+
+    #left {
+        width: 100%;
+        margin: 0;
+        padding: 0 3rem;
+
+    }
+
+    #left img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    #right {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #right h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    #right p {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+    }
+
+    #right a {
+        width: 300px;
+        height: 50px;
+        margin-bottom: 3rem;
+    }
+    .social-links {
+       
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .social-links span{
+        display: inline-flex;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #fff;
+        margin-bottom: 2rem;
+   
+    
+    
+    }
+}
