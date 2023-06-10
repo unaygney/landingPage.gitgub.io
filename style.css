@@ -85,6 +85,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: all .5s;
     font-size: 1.3rem;
+    color:hsl(257, 40%, 49%);
  
 }
 
